@@ -31,8 +31,8 @@
             </div>
             <div class="row">
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                    <label class="form-check-label" for="flexRadioDefault3">
                         Un carnaval de cuento
                     </label>
                     <img class="img-option" src="{{asset('img/cuento.jpg')}}" alt="un carnaval de cuento">
@@ -40,8 +40,8 @@
             </div>
             <div class="row">
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+                    <label class="form-check-label" for="flexRadioDefault4">
                         Viajeros por el mundo
                     </label>
                     <img class="img-option" src="{{asset('img/viajeros.jpg')}}" alt="viajeros por el mundo">
@@ -49,8 +49,8 @@
             </div>
             <div class="row">
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked>
+                    <label class="form-check-label" for="flexRadioDefault5">
                         El mundo murguero
                     </label>
                     <img class="img-option" src="{{asset('img/murguero.jpg')}}" alt="el mundo murguero">
@@ -58,8 +58,8 @@
             </div>
             <div class="row">
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" checked>
+                    <label class="form-check-label" for="flexRadioDefault6">
                         Un carnaval en la antigua Roma
                     </label>
                     <img class="img-option" src="{{asset('img/roma.jpg')}}" alt="antigua roma">
@@ -67,8 +67,8 @@
             </div>
             <div class="row">
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7" checked>
+                    <label class="form-check-label" for="flexRadioDefault7">
                         Chicago Gangster años 30
                     </label>
                     <img class="img-option" src="{{asset('img/chicago.jpg')}}" alt="Chicago Gangster">
@@ -115,12 +115,13 @@
             // Obtener el texto del label asociado con el valor seleccionado
             var selectedText = $('label[for="' + selectedRadio.attr('id') + '"]').text();
             // enviar la dirección IP pública y el valor seleccionado a la base de datos
+            console.log(selectedText);
             $.ajax({
                 url: 'http://127.0.0.1:8000/vote',
                 type: 'POST',
                 data: {
                     ip: data.ip,
-                    vote: selectedText // Enviar el texto seleccionado
+                    voto: selectedText // Enviar el texto seleccionado
                 },
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
