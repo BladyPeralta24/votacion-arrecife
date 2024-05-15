@@ -78,4 +78,6 @@ class VoteController extends Controller
             'voto' => $vote,
         ]);
     }
+
+
 }

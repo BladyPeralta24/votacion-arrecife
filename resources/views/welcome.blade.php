@@ -11,7 +11,72 @@
     <form method="post" id="formulario">
         <h3>Encuesta para los carnavales de Arrecife 2025</h3>
         <div class="check-container">
-            <div class="row">
+            <table>
+                <tr>
+                    <div class="row">
+                        <div class="form-check">
+                            <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></td>
+                            <th><label class="form-check-label" for="flexRadioDefault1">Disney</label></th>
+                            <td><img class="img-option" src="{{asset('img/disney.jpg')}}" alt="disney"></td>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <div class="form-check">
+                            <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked></td>
+                            <th><label class="form-check-label" for="flexRadioDefault2">Aventuras</label></th>
+                            <td><img class="img-option" src="{{asset('img/aventuras.jpg')}}" alt="aventuras"></td>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <div class="form-check">
+                            <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked></td>
+                            <th><label class="form-check-label" for="flexRadioDefault3">Un carnaval de cuento</label></th>
+                            <td><img class="img-option" src="{{asset('img/cuento.jpg')}}" alt="un carnaval de cuento"></td>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <div class="form-check">
+                            <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked></td>
+                            <th><label class="form-check-label" for="flexRadioDefault4">Viajeros por el mundo</label></th>
+                            <td><img class="img-option" src="{{asset('img/viajeros.jpg')}}" alt="viajeros por el mundo"></td>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <div class="form-check">
+                            <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked></td>
+                            <th><label class="form-check-label" for="flexRadioDefault5">El mundo murguero</label></th>
+                            <td><img class="img-option" src="{{asset('img/murguero.jpg')}}" alt="el mundo murguero"></td>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <div class="form-check">
+                            <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" checked></td>
+                            <th><label class="form-check-label" for="flexRadioDefault6">Un carnaval en la antigua Roma</label></th>
+                            <td><img class="img-option" src="{{asset('img/roma.jpg')}}" alt="antigua roma"></td>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <div class="form-check">
+                            <td><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7" checked></td>
+                            <th><label class="form-check-label" for="flexRadioDefault7">Chicago Gangster años 30</label></th>
+                            <td><img class="img-option" src="{{asset('img/chicago.jpg')}}" alt="Chicago Gangster"></td>
+                        </div>
+                    </div>
+                </tr>
+            </table>
+            {{-- <div class="row">
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                     <label class="form-check-label" for="flexRadioDefault1">
@@ -73,7 +138,7 @@
                     </label>
                     <img class="img-option" src="{{asset('img/chicago.jpg')}}" alt="Chicago Gangster">
                 </div>
-            </div>
+            </div> --}}
             <div class="send">
                 <button id="vote-button" type="button" class="btn btn-outline-success">Votar</button>
             </div>
