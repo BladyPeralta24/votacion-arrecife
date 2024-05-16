@@ -14,10 +14,12 @@ body{
 }
 
 table{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
     align-items: center;
     justify-content: center;
+    font-size: 1.5em;
+    text-align: left;
 }
 
 .contact-form .form-control{
@@ -82,14 +84,14 @@ table{
 
 .check-container{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     font-size: 1.8em;
 }
 .row{
     /*la parte del label debe estar al lado de la img*/
-    margin: 50px;
+    /* margin: 50px; */
     display: flex;
     flex-direction: row;
 
@@ -125,7 +127,7 @@ img.img-check {
 }
 
 img.img-option{
-    width: 200px;
+    width: 350px;
     margin: 20px;
     /* margin-bottom: 20px; */
     border-radius: 20px;
@@ -190,4 +192,18 @@ p {
     color: #fff
 }
 
+.btn-volver{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0100;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* transition: background-color 0.9s ease; */
+}
 
+.btn-volver:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
